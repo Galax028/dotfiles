@@ -1,0 +1,107 @@
+[global]
+    # Display
+    monitor = 0
+    follow = none
+    sort = true
+    idle_threshold = 0
+    show_age_threshold = -1
+    enable_posix_regex = false
+
+    # Geometry
+    width = 400
+    height = 100
+    origin = bottom-right
+    offset = 10x64
+    scale = 0
+    transparency = 0
+
+    # Padding / Spacing
+    padding = 10
+    horizontal_padding = 10
+    text_icon_padding = 0
+    gap_size = 10
+
+    # Separator
+    separator_height = 2
+    separator_color = frame
+
+    # Frame
+    frame_width = 1
+    frame_color = "#404040"
+
+    # Limit
+    notification_limit = 10
+    indicate_hidden = true
+
+    # Duplicates
+    stack_duplicates = true
+    hide_duplicate_count = false
+
+    # History
+    history_length = 20
+    sticky_history = true
+
+    # Text
+    font = FiraCode Nerd Font 12
+    line_height = 0
+    markup = full
+    format = "<b>%a - %s</b>\n%b"
+    word_wrap = true
+    ellipsize = end
+    ignore_newline = false
+    show_indicators = false
+    hide_text = false
+    alignment = left
+    vertical_alignment = top
+
+    # Icons
+    icon_path = /usr/share/icons/Adwaita/32x32/status/:/usr/share/icons/Adwaita/32x32/devices/
+    icon_theme = Adwaita
+    icon_corner_radius = 0
+    icon_position = left
+    min_icon_size = 32
+    max_icon_size = 64
+
+    # Mouse
+    mouse_left_click = open_url
+    mouse_middle_click = close_all
+    mouse_right_click = close_current
+
+    # Progress Bar
+    progress_bar = true
+    progress_bar_horizontal_alignment = center
+    progress_bar_height = 10
+    progress_bar_min_width = 150
+    progress_bar_max_width = 300
+    progress_bar_frame_width = 1
+    progress_bar_corner_radius = 0
+
+    # Miscellaneous
+    dmenu = /usr/bin/dmenu -p dunst
+    browser = /usr/bin/firefox-developer-edition
+    always_run_script = true
+    title = Dunst
+    class = Dunst
+    force_xinerama = false
+    corner_radius = 0
+    ignore_dbusclose = false
+
+[experimental]
+    enable_recursive_icon_lookup = true
+    per_monitor_dpi = false
+
+[urgency_low]
+    background = "#171717"
+    foreground = "#fafafa"
+    timeout = 10
+
+[urgency_normal]
+    background = "#171717"
+    foreground = "#fafafa"
+    timeout = 10
+
+[urgency_critical]
+    background = "#171717"
+    foreground = "#b91c1c"
+    frame_color = "#b91c1c"
+    timeout = 0

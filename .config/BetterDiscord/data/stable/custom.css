@@ -1,0 +1,72 @@
+:root {
+    --font-primary: "Fira Code", "FiraGO";
+    --font-display: "FiraGO";
+    --font-code: "JetBrains Mono";
+}
+
+/* message content */
+.messageContent-2t3eCI {
+    font-family: var(--font-primary);
+    font-size: 14px;
+}
+
+/* code text */
+.hljs, .inline {
+    font-family: var(--font-code);
+    font-size: 14px;
+}
+
+/* activity text */
+.activityText-1rR-8O {
+    font-size: 10px;
+}
+
+/* context menu text */
+.label-2gNW3x {
+    font-size: 12px;
+}
+
+/* code line in input */
+.codeLine-3a3dbd {
+    font-family: var(--font-code);
+    font-size: 16px;
+}
+
+.inlineCode-2auMQi {
+    font-family: var(--font-code);
+    font-size: 16px;
+}
+
+.subText-OGOWMj {
+    font-size: 10px;
+}
+
+/* channel name */
+.channelName-3KPsGw {
+    font-size: 12px;
+}
+
+.username-3KYl0N {
+    font-size: 12px;
+}
+
+/* bot text */
+.botText-1526X_ {
+    font-family: var(--font-display);
+    font-size: 9px !important;
+}
+
+/* mention */
+.wrapper-1ZcZW- {
+    font-weight: 900;
+}
+
+/* category text */
+.name-3BUDLf {
+    font-weight: 700;
+}
+
+/* voice timer */
+.voiceTimer {
+    font-size: 10px;
+}

@@ -1,0 +1,16 @@
+configuration {
+  modes: "window,drun";
+  show-icons: true;
+  terminal: "kitty";
+  drun-url-launcher: "xdg-open";
+  timeout {
+    action: "kb-cancel";
+    delay: 0;
+  }
+  filebrowser {
+    directories-first: true;
+    sorting-method: "name";
+  }
+}
+
+@theme "main"

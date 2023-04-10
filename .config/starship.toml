@@ -1,0 +1,103 @@
+# Main prompt formatting
+format = """
+$directory\
+[](bg:#f76707 fg:#364fc7)\
+$git_branch\
+$git_status\
+[](bg:#dee2e6 fg:#f76707)\
+$c\
+$nodejs\
+$python\
+$rust\
+[](bg:#1864ab fg:#dee2e6)\
+$docker_context\
+[](fg:#1864ab)\
+$fill\
+[](fg:#868e96)\
+$time
+[ ](bg:#f59f00)\
+$username\
+$hostname\
+[](bg:#fcc419 fg:#f59f00)\
+$cmd_duration\
+$character
+"""
+
+# Second line modules
+[directory]
+truncation_length = 5
+truncation_symbol = ".../"
+truncate_to_repo = false
+read_only = " "
+read_only_style = "bg:#364fc7 fg:#c92a2a bold"
+style = "bg:#364fc7 fg:#f8f9fa bold"
+format = "[ $path ]($style)[$read_only]($read_only_style)"
+
+[username]
+show_always = true
+style_user = "bg:#f59f00 fg:#212529 bold"
+style_root = "bg:#f59f00 fg:#c92a2a bold underline"
+format = "[$user]($style)"
+
+[hostname]
+ssh_only = false
+ssh_symbol = " [ssh]"
+style = "bg:#f59f00 fg:#212529 bold"
+format = "[@$hostname$ssh_symbol ]($style)"
+
+[cmd_duration]
+min_time = 500
+show_notifications = true
+style = "bg:#fcc419 fg:#212529"
+format = "[ took $duration ]($style)"
+
+[character]
+success_symbol = "[ ](bg:#40c057 fg:#fcc419)[](fg:#40c057)"
+error_symbol = "[ ](bg:#c92a2a fg:#fcc419)[](fg:#c92a2a)"
+
+# First line modules
+[git_branch]
+symbol = ""
+style = "bg:#f76707 fg:#f8f9fa bold"
+format = "[ $symbol $branch ]($style)"
+
+[git_status]
+style = "bg:#f76707 fg:#f8f9fa bold"
+format = '[$all_status$ahead_behind ]($style)'
+
+[docker_context]
+symbol = " "
+style = "bg:#1864ab"
+format = '[ $symbol $context ]($style) $path'
+
+[c]
+symbol = " "
+style = "bg:#dee2e6 fg:#212529"
+format = "[ $symbol$version ]($style)"
+
+[nodejs]
+symbol = " "
+style = "bg:#dee2e6 fg:#212529"
+format = "[ $symbol$version ]($style)"
+
+[python]
+symbol = " "
+style = "bg:#dee2e6 fg:#212529"
+format = "[ $symbol($virtualenv )$version ]($style)"
+
+[rust]
+symbol = " "
+style = "bg:#dee2e6 fg:#212529"
+format = "[ $symbol$version ]($style)"
+
+[fill]
+symbol = " "
+
+# First line modules right side
+[time]
+disabled = false
+use_12hr = true
+time_format = "%r %d/%m/%Y"
+style = "bg:#868e96 fg:#212529 bold"
+format = "[ $time ]($style)"
+

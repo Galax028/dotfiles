@@ -9,6 +9,7 @@
 - **WM:** Qtile
 - **Bar:** Qtile (w/Qtile Extras)
 - **Compositor:** Picom (Jonaburg's Fork)
+- **App Launcher/Window Switcher:** Rofi
 - **Notification:** Dunst
 - **GTK/Qt Theme:** Yaru Deepblue
 - **Icon Theme:** Kora

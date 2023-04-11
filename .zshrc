@@ -3,6 +3,11 @@ HISTFILE=~/.zsh_history
 HISTSIZE=1000
 SAVEHIST=3000
 
+# Remove "%" sign from partial lines
+setopt PROMPT_CR
+setopt PROMPT_SP
+export PROMPT_EOL_MARK=""
+
 # Autocompletion
 zstyle :compinstall filename "/home/galax/.zshrc"
 

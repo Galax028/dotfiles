@@ -1,28 +1,7 @@
-# Shell history
-HISTFILE=~/.zsh_history
-HISTSIZE=1000
-SAVEHIST=3000
+for file in $XDG_CONFIG_HOME/zsh/*; do
+    source $file
+done
 
-# Remove "%" sign from partial lines
-setopt PROMPT_CR
-setopt PROMPT_SP
-export PROMPT_EOL_MARK=""
-
-# Autocompletion
-zstyle :compinstall filename "/home/galax/.zshrc"
-
-autoload -Uz compinit && compinit
-autoload -Uz bashcompinit && bashcompinit
-
-# Node version manager
 source /usr/share/nvm/init-nvm.sh
 
-# Aliases
-source ~/.config/zsh/aliases.sh
-
-# Plugions
-source ~/.config/zsh/plugins.zsh
-
-# Starship prompt
 eval "$(starship init zsh)"
-

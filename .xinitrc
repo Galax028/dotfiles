@@ -12,6 +12,10 @@ if [ -d /etc/X11/xinit/xinitrc.d ]; then
     unset f
 fi
 
+# Screensaver settings
+xset s 600
+xss-lock -n /usr/lib/xsecurelock/dimmer -l -- sessionlock &
+
 # G502 mouse settings
 ratbagctl hollering-marmot profile active set 0
 # xinput --set-prop "Logitech G502 HERO Gaming Mouse" 185 2 0 0 0 2 0 0 0 1
